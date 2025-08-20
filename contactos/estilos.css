@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(177, 248, 209);
+    color: rgb(26, 36, 124);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.6em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(18, 25, 90,0.8);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: rgb(26, 36, 126);
+    background-color: rgb(248, 212, 5);
+}
+button:hover{
+    background-color: rgb(218, 178, 3);
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(
+        1deg,
+        rgb(138, 248, 188),
+        rgb(1, 99, 155)     
+    );
+    color: white;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: rgba(40, 23, 138, 0.938);
+    text-shadow: 2px 2px 5px rgba(165, 239, 243, 0.8);
+}
+header a:hover{
+    color: rgb(237, 247, 247);
+}
+
+#visitanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("img/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#visitanos button{
+    font-size: 4vw;
+}
+#visitanos h2{
+    color: rgb(252, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-size: 8vw;
+}
+
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        1deg,
+        rgb(22, 28, 110),
+        rgb(138, 248, 188)     
+    );
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+#ubicacion .container{
+    text-align: center;
+    padding: 100px 0px;
+    margin: 0;
+}
+.color-acento{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color:  rgb(248, 236, 61);
+}
+#ubicacion h3{
+    font-size: 3.5vw;
+    padding: 0;
+    margin: 0;
+}
+#ubicacion h4{
+    font-size: 3vw;
+    padding: 5px 12px;
+}
+.texto p{
+    color: aquamarine;
+    font-size: 2.5vw;
+    margin: 5px;
+    padding: 0;
+}
+iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#contactos{
+    background-color: rgb(22, 28, 110);
+    color: rgb(255, 230, 0);
+    text-align: center;
+}
+#contactos .container{
+    /* height: 120vh; */
+    padding: 30px 10px;
+}
+#contactos h2{
+    color: rgb(255, 255, 255);
+    padding: 10px 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    font-size: 4vw;
+}
+#contactos h3{
+    font-size: 3vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin: 5px 2px;
+    padding: 5px 2px;
+}
+#contactos img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    height: 10vw;
+    margin: 0;
+    padding: 0;
+}
+#contactos .ventas{
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 0px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.ventas a{
+    font-size: 3.5vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color:  rgb(255, 255, 255);
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+.ventas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/hero.jpg");     
+}
+.ventas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/hero.jpg"); 
+}
+.ventas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/hero.jpg"); 
+}
+
+#encuentranos{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(
+        1deg,
+        rgb(138, 248, 188),
+        rgb(22, 28, 110)     
+    );
+    color: white;
+}
+#encuentranos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+#encuentranos h2{
+    font-size: 1.75em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color:  rgb(255, 255, 255);
+}
+#encuentranos li{
+    font-size: 1em;
+    text-align: left;
+    margin: 18px 0px;
+    font-weight: bold;
+}
+#encuentranos li img{
+    margin: 0px 10px;
+    height: 40px;
+    width: 40px;
+}
+
+footer{
+    background-image: linear-gradient(
+        1deg,
+        rgb(4, 140, 158),
+        rgba(138, 248, 188, 0.863)
+    );
+}
+footer p{
+    margin: 0;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* ========================= */
+/* ESTILOS PARA ESCRITORIO   */
+/* ========================= */
+@media screen and (min-width: 1024px) {
+    header {
+        position: fixed;/* Manteiene permanente el header */
+        width: 100%;
+    }
+
+    /* Header en fila */
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo {
+        font-size: 2.5em; /* más pequeño que en móvil */
+    }
+    header .nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+    header a {
+        font-size: 1.2em;
+    }
+
+    #contactos .container {
+        display: inline;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 50px;
+    }
+    #contactos h2 {
+        font-size: 2em;
+    }
+    #contactos h3 {
+        font-size: 1.2em;
+    }
+    #contactos img {
+        height: 120px;
+    }
+    .ventas a {
+        font-size: 1.2em;
+    }
+
+    #encuentranos .container{
+        padding: 180px 100px;
+    }
+    #encuentranos h2{
+        font-size: 3em;
+    }
+}

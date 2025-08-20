@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(138, 248, 188);
+    color: rgb(25, 35, 124);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(18, 25, 90,0.8);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: rgb(18, 25, 90);
+    background-color: rgb(248, 212, 5);
+}
+button:hover{
+    background-color: rgb(218, 178, 3);
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(
+        1deg,
+        rgb(138, 248, 188),
+        rgb(1, 99, 155)     
+    );
+    color: white;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(6, 2, 59, 0.8);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(27, 16, 94, 0.938);
+    text-shadow: 2px 2px 5px rgba(165, 239, 243, 0.8);
+}
+
+header a:hover{
+    color: rgb(11, 177, 177);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(5, 22, 78, 0.541),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 2em;
+}
+#hero h1{
+    font-size: 2em;
+    color: rgb(252, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+#somos-AyO .container{
+    text-align: center;
+    padding: 200px 15px;
+    margin: 5px;
+}
+.color-acento{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color:  rgb(255, 255, 255);
+}
+#somos-AyO h2{
+    font-size: 5vw;
+}
+#somos-AyO p{
+    font-size: 1em;
+}
+#nuestros-productos{
+    background-color: rgb(17, 22, 87);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-productos .container{
+    padding: 100px 10px;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    /* font-size: 5vw; */
+}
+
+#nuestros-productos h3{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 35px 0px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    box-shadow: 2px 2px 5px rgb(1, 1, 48);
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/escritorio.jpg");     
+}
+
+.carta:nth-child(2){
+    box-shadow: 2px 2px 5px rgb(1, 1, 48);
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/escolar.jpeg"); 
+}
+
+.carta:nth-child(3){
+    box-shadow: 2px 2px 5px rgb(1, 1, 48);
+    background-image: linear-gradient(
+        0deg,
+        rgba(3, 34, 53, 0.3),
+        rgba(7, 49, 77, 0.3)
+    ), url("../img/arte.jpg"); 
+}
+
+
+#caracteristicas{
+    background-image: linear-gradient(
+        1deg,
+        rgb(138, 248, 188),
+        rgb(17, 22, 87)     
+    );
+    color: white;
+    text-shadow: 2px 2px 5px rgba(1, 47, 61, 0.856);
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 18px;
+}
+#caracteristicas li{
+    text-align: left;
+    margin: 18px 5px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        1deg,
+        rgb(17, 22, 87),
+        rgb(138, 248, 188)
+    );
+    color: white;
+}
+#final h2{
+    font-size: 6vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+#final button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(17, 22, 87);
+}
+
+footer p{
+    margin: 0;
+    padding: 15px;
+    color: rgb(169, 241, 220);
+}
+
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* para escritorio */
+@media (min-width: 768px) {
+    header {
+        position: fixed;/* Manteiene permanente el header */
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    header nav {
+        /* display: flex; */
+        flex-direction: row;
+        /* padding-bottom: 0; */
+    }
+
+    #somos-AyO .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: left;
+        padding: 190px 12px;
+    }
+
+    #nuestros-productos p {
+        color: rgb(2, 4, 97);
+        text-shadow: 1px 1px 3px rgb(207, 204, 199);
+        display: block; 
+    }
+
+    #nuestros-productos .productos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos .carta {
+        flex: 1;
+        margin: 15px;
+    }
+
+    #caracteristicas .container {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #final h2 {
+        font-size: 3em;
+    }
+
+    #final button {
+        font-size: 1.5em;
+    }
+}
